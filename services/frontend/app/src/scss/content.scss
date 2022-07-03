@@ -1,0 +1,14 @@
+.content-block {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.expandable-image > img {
+  max-width: 700px;
+  max-height: 700px;
+  margin: 0 auto;
+  width: auto !important;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}

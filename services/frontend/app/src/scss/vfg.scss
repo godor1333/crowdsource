@@ -1,0 +1,25 @@
+@import 'bootstrap';
+
+.card-vfg {
+  .vue-form-generator {
+    fieldset {
+      legend {
+        @extend .card-title;
+        padding-top: 16px;
+        margin-bottom: -16px;
+      }
+
+      // padding: unset;
+      // margin: unset;
+      border: unset !important;
+      outline: 1px solid rgba(0, 0, 0, 0.125);
+      display: block !important;
+      @extend .card;
+      @extend .card-body;
+    }
+
+    &:nth-child(n+1) {
+      margin-bottom: 16px;
+    }
+  }
+}

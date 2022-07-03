@@ -1,0 +1,50 @@
+.redString {
+  text-indent: 30px;
+  text-align: justify;
+}
+
+.h-15 {
+  height: 15% !important;
+}
+
+.h-45 {
+  height: 45% !important;
+}
+
+.h-60 {
+  height: 60% !important;
+}
+
+.w-7 {
+  width: 7% !important;
+}
+
+.w-10 {
+  width: 10% !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.w-30 {
+  width: 30% !important;
+}
+
+.w-33 {
+  width: 33% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.cell-wrap-text {
+  white-space: normal !important;
+}
+
+@mixin removeRounedBorders {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+}

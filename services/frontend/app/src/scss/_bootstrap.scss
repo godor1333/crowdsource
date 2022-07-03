@@ -1,0 +1,10 @@
+@import "colors";
+
+$primary: map-get($french-palette, "green-4");
+$secondary: map-get($french-palette, "red-1");
+$success: map-get($french-palette, "green-2");
+$info: map-get($french-palette, "light-blue-1");
+$danger: map-get($french-palette, "red-3");
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-vue/src/index.scss";

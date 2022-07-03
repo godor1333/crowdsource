@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  flask:
+    build: ./services/backend/
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongodb
+    container_name: flask
+  frontend:
+    build: ./services/frontend/
+    ports:
+      - "8080:8080"
+    container_name: vue
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+  nginx:
+    build:
+      context: ./services/web
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "1234:80"
+      - "443:443"
+    depends_on:
+      - flask
+

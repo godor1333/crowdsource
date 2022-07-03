@@ -1,0 +1,20 @@
+.custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label{
+  color: #525252 !important;
+}
+.form-control:disabled, .form-control[readonly]{
+  background-color: #efefef !important;
+}
+.multiselect--disabled{
+  color: #525252 !important;
+  opacity: 0.9;
+}
+
+/* Uncomment to make it looks like not disabled
+.form-group.disabled>label{
+  color: #323232 !important;
+}
+.form-control:disabled, .form-control[readonly]{
+  background-color: #fafafa !important;
+  color: #676767;
+}
+*/

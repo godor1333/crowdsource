@@ -1,0 +1,12 @@
+[Unit]
+Description=Gunicorn instance to serve app
+After=network.target
+
+[Service]
+User=alex
+Group=www-data
+WorkingDirectory=/home/wolf-of-wall-street/nosql2h20-crowdsource-mongo/services/backend
+Environment="PATH=/home/wolf-of-wall-street/nosql2h20-crowdsource-mongo/services/backend/venv/bin"
+ExecStart=/home/wolf-of-wall-street/nosql2h20-crowdsource-mongo/services/backend/venv/bin/gunicorn --workers 3 --bind unix:app.sock -m 007 app.config:app
+[Install]
+WantedBy=multi-user.target
